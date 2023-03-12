@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Dummy meta description">
+    <meta name="description" content="Dummy meta description" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script defer src="assets/js/main.js"></script>
     <title>Document</title>
@@ -31,10 +31,13 @@
           </li>
         </ul>
       </nav>
+      <button class="burger--btn">
+        <img src="assets/images/burgerMenu.png" alt="burger menu">
+      </button>
     </header>
     <main class="main__content">
       <section class="ava_section">
-        <h1 class="main__title">ჩეთბოტის შესახებ</h1>
+        <h1 class="main__title">ჩეტბოტის შესახებ</h1>
         <div class="ava__info">
           <div class="main__info">
             <div class="main__info--text">
@@ -61,7 +64,20 @@
                 <a href="#" class="about__btn">ჩატის დაწყება</a>
               </div>
             </div>
-            <!-- <img src="assets/images/ava-profile.webp" class="ava__main--img" alt="avas image" /> -->
+            <div class="ava__img--div">
+              <!-- <img src="assets/images/ava-profile.webp" class="ava__main--img" alt="avas image" /> -->
+              <picture>
+                <source
+                  media="(max-width:1090px)"
+                  srcset="assets/images/ava-finished-tablet-image-1.png"
+                />
+                <img
+                  src="assets/images/ava-profile.webp"
+                  class="ava__main--img"
+                  alt="avas image"
+                />
+              </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -111,7 +127,14 @@
         <h2 class="secondary__title margin-bottom-md">პროექტის შესახებ</h2>
         <div class="about__grid">
           <div class="ava--img">
-            <img src="assets/images/ava-profile-2.webp" alt="avas image two" />
+            <!-- <img src="assets/images/ava-profile-2.webp" alt="avas image two" /> -->
+            <picture>
+              <source
+                media="(max-width:1090px)"
+                srcset="assets/images/ava-finished-image-2-tablet.png"
+              />
+              <img src="assets/images/ava-profile-2.webp" alt="avas image two" /> 
+            </picture>
           </div>
           <div class="about--text">
             <p class="about__paragraph">
@@ -147,7 +170,9 @@
       <h2 class="footer__title">კონტაქტი</h2>
       <ul class="footer__info">
         <li class="footer-item">
-          <span><img src="assets/images/emai-logo.webp" alt="email logo" /></span>
+          <span
+            ><img src="assets/images/emai-logo.webp" alt="email logo"
+          /></span>
           <div class="emails">
             <a href="mailto:info@iliauni.edu.ge" class="footer__anchor"
               >info@iliauni.edu.ge</a
@@ -158,11 +183,19 @@
           </div>
         </li>
         <li class="footer-item">
-          <span><img src="assets/images/facebook-logo.webp" alt="facebook logo" /></span>
-          <a href="https://www.facebook.com/UniLabEdu" class="footer__anchor">Unilab/ Iliauni</a>
+          <span
+            ><img src="assets/images/facebook-logo.webp" alt="facebook logo"
+          /></span>
+          <a href="https://www.facebook.com/UniLabEdu" class="footer__anchor"
+            >Unilab/ Iliauni</a
+          >
         </li>
         <li class="footer-item">
-          <span><img src="assets/images/location-logo.webp" alt="location pin logo" /></span>
+          <span
+            ><img
+              src="assets/images/location-logo.webp"
+              alt="location pin logo"
+          /></span>
           <a href="#" class="footer__anchor"
             >⅗ ქაქუცა ჩოლოყაშვილის ქუჩა, თბილისი.</a
           >
