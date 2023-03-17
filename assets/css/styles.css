@@ -375,6 +375,10 @@ html {
 .burger--btn{
   display: none;
 }
+.anima__link{
+  text-decoration: underline;
+  color: #fff;
+}
 /* .about__project{
   background-image: url('../images/ava-profile-2.webp');
   background-repeat: no-repeat;
