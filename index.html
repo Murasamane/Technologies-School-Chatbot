@@ -24,7 +24,7 @@
             <a href="#" class="navigation__anchor">მთავარი</a>
           </li>
           <li class="nav-item">
-            <a href="#creators" class="navigation__anchor">ჩვენს შესახებ</a>
+            <a href="#creators" class="navigation__anchor">ჩვენ შესახებ</a>
           </li>
           <li class="nav-item">
             <a href="#footer" class="navigation__anchor">კონტაქტი</a>
@@ -32,7 +32,7 @@
         </ul>
       </nav>
       <button class="burger--btn">
-        <img src="assets/images/burgerMenu.png" alt="burger menu">
+        <img src="assets/images/burgerMenu.png" alt="burger menu" />
       </button>
     </header>
     <main class="main__content">
@@ -61,11 +61,10 @@
               </p>
 
               <div class="about_btn">
-                <a href="#" class="about__btn">ჩატის დაწყება</a>
+                <a href="#" class="about__btn chatbot__btns">ჩატის დაწყება</a>
               </div>
             </div>
             <div class="ava__img--div">
-              <!-- <img src="assets/images/ava-profile.webp" class="ava__main--img" alt="avas image" /> -->
               <picture>
                 <source
                   media="(max-width:1090px)"
@@ -83,7 +82,7 @@
       </section>
 
       <section class="what-is-ava">
-        <h2 class="secondary__title">რა არის ჩეთბოტი</h2>
+        <h2 class="secondary__title">რა არის ჩეტბოტი?</h2>
         <div class="what-is-ava--text">
           <p class="secondary__paragraph">
             ჩეტბოტი არის კომპიუტერული პროგრამა, რომელსაც მატერიალური განსხეულება
@@ -96,27 +95,49 @@
             გასავრცელებლად.
           </p>
           <div class="about_btn">
-            <a href="#" class="about__btn">ჩატის დაწყება</a>
+            <a href="#" class="about__btn chatbot__btns">ჩატის დაწყება</a>
           </div>
         </div>
       </section>
 
       <section class="abilities">
-        <h2 class="secondary__title">რაზე საუბარი შეუძლია ავას</h2>
+        <h2 class="secondary__title">რაზე შეუძლია ავას საუბარი</h2>
         <ul class="ability__list">
           <li class="ability-item">
-            <span><img src="assets/images/Stars.webp" alt="star logo" /></span>
+            <span>
+              <picture>
+                <source
+                  media="(max-width:770px)"
+                  srcset="assets/images/mobile-stars.png"
+                />
+                <img src="assets/images/Stars.webp" alt="star logo" />
+              </picture>
+            </span>
             მის პერსონალობაზე. ავა ჩვეულებრივი ჩეტბოტი არაა, მას თავისი ხასიათი
             და ისტორია გააჩნია.
           </li>
           <li class="ability-item">
-            <span><img src="assets/images/Stars.webp" alt="star logo" /></span>
+            <span>
+              <picture>
+                <source
+                  media="(max-width:770px)"
+                  srcset="assets/images/mobile-stars.png"
+                />
+                <img src="assets/images/Stars.webp" alt="star logo" /> </picture
+            ></span>
             ილიაუნის ტექნოლოგიის სკოლაზე, ნებისმიერ ძირითად თემაზე, რაც ამ
             სკოლასთან დაკავშირებით შეიძლება ადამიანს გაუჩნდეს, იქნება ეს
             ადმინისტრაციული თუ აკადემიური.
           </li>
           <li class="ability-item">
-            <span><img src="assets/images/Stars.webp" alt="star logo" /></span>
+            <span>
+              <picture>
+                <source
+                  media="(max-width:770px)"
+                  srcset="assets/images/mobile-stars.png"
+                />
+                <img src="assets/images/Stars.webp" alt="star logo" /> </picture
+            ></span>
             ზოგადად ტექნოლოგიებზე, სხვადასხვა მიმართულებაზე, როგორებიცაა: VR,
             ხელოვნური ინტელექტი და სხვა, თავისი ინტერესებიდან გამომდინარე.
           </li>
@@ -127,13 +148,16 @@
         <h2 class="secondary__title margin-bottom-md">პროექტის შესახებ</h2>
         <div class="about__grid">
           <div class="ava--img">
-            <!-- <img src="assets/images/ava-profile-2.webp" alt="avas image two" /> -->
             <picture>
               <source
                 media="(max-width:1090px)"
                 srcset="assets/images/ava-finished-image-2-tablet.png"
               />
-              <img src="assets/images/ava-profile-2.webp" alt="avas image two" /> 
+              <img
+                src="assets/images/ava-profile-2.webp"
+                class="about__project--img"
+                alt="avas image two"
+              />
             </picture>
           </div>
           <div class="about--text">
@@ -145,6 +169,13 @@
               მიზანია მომხმარებლისთვის საინტერესო და სასარგებლო ინფორმაციის
               მიწოდება ტექნოლოგიის სკოლის, მისი სასწავლო სისტემისა და პერსონალის
               შესახებ. ასევე, ზოგადად, ტექნოლოგიური სფეროს პოპულარიზაცია.
+              ჩეტბოტი აწყობილია ანიმა ჩეტბოტიქსის პლატფორმაზე
+              <a
+                href="https://animachatbotics.com/"
+                class="anima__link"
+                target="_blank"
+                >animachatbotics</a
+              >
             </p>
           </div>
         </div>
@@ -202,5 +233,16 @@
         </li>
       </ul>
     </footer>
+    <div class="chatbot__container">
+      <iframe
+        id="chatbotIframe"
+        src="https://animachatbotics.com/Scripts/bot-MBD/bot/index3.html?botId=4007&tone=0"
+        style="width: 100%; height: 100%; display: none"
+        frameborder="0"
+      ></iframe>
+      <div class="chatbot__btn chatbot__btns">
+        <div class="chatbot__open__btn"></div>
+      </div>
+    </div>
   </body>
 </html>
