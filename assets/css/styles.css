@@ -5,4 +5,876 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "BPG Nateli Mtavruli";
+  src: url("../fonts/bpg_nateli_mtavruli_[FONTS.GE]/bpg_nateli_mtavruli.ttf");
+}
+@font-face {
+  font-family: "FiraGo Italic";
+  src: url("../fonts/Download_Folder_FiraGO_1001/Download_Folder_FiraGO_1001/Fonts/FiraGO_TTF_1001/Italic/FiraGO-Italic.ttf");
+}
+@font-face {
+  font-family: "FiraGo light";
+  src: url("../fonts/Download_Folder_FiraGO_1001/Download_Folder_FiraGO_1001/Fonts/FiraGO_TTF_1001/Roman/FiraGO-Light.ttf");
+}
+@font-face {
+  font-family: "BPG Nino Medium Caps";
+  src: url("../fonts/bpg-nino-medium-caps-master/bpg-nino-medium-caps-master/fonts/bpg-nino-medium-caps-webfont.ttf");
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1d1d;
+  padding: 2.1rem 12rem;
+}
+.fixed__header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+.main__fixed {
+  margin-top: 11rem;
+}
+.navigation__links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 3.9rem;
+}
+
+.navigation__anchor:link,
+.navigation__anchor:visited {
+  display: inline-block;
+  font-family: "BPG Nateli Mtavruli";
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.main__content {
+  background-color: #020101;
+  padding: 9.4rem 11.6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 9.8rem;
+}
+.main__title {
+  font-family: "BPG Nino Medium Caps";
+  font-size: 9.6rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.ava__name {
+  font-family: "FiraGo Italic";
+  font-size: 3.4rem;
+  font-weight: 500;
+  color: #3697a9;
+  position: relative;
+}
+.ava__name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.3rem;
+  width: 5rem;
+  height: 0.1rem;
+  background-color: #3697a9;
+}
+
+.main__info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-items: center;
+  align-items: center;
+}
+.main__info--text {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 2.9rem 3.5rem;
+  gap: 4.1rem;
+}
+.main__info--text::before {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  height: 0.1rem;
+  width: 60rem;
+  max-width: 100%;
+  background-color: #fff;
+}
+.main__info--text::after {
+  content: "";
+  position: absolute;
+  left: 0rem;
+  top: 0;
+  width: 0.1rem;
+  max-width: 100%;
+  height: 70rem;
+  background-color: #fff;
+}
+.main__info--paragraph {
+  font-family: "FiraGo light";
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.about__btn:link,
+.about__btn:visited {
+  font-family: "BPG Nino Medium Caps";
+  font-size: 2.4rem;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #3697a9;
+  color: #020101;
+  padding: 2.2rem 4rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+}
+
+.what-is-ava {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2.8rem;
+}
+.what-is-ava--text {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 4.8rem;
+  padding: 3.5rem 3.2rem;
+}
+.what-is-ava--text::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100.6rem;
+  max-width: 100%;
+  height: 0.1rem;
+  background-color: #fff;
+}
+
+.what-is-ava--text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.1rem;
+  max-width: 100%;
+  height: 51rem;
+  background-color: #fff;
+}
+.secondary__title {
+  font-family: "BPG Nino Medium Caps";
+  font-size: 6.4rem;
+  color: #3697a9;
+}
+
+.secondary__paragraph {
+  font-family: "FiraGo light";
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: right;
+  padding-left: 41%;
+}
+
+.abilities {
+  margin-bottom: 12.8rem;
+}
+.ability__list {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.1rem;
+  padding-right: 50%;
+  margin-top: 3rem;
+}
+.ability__list::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  height: 0.1rem;
+  width: 61rem;
+  max-width: 100%;
+  background-color: #fff;
+}
+.ability__list::after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  width: 0.1rem;
+  height: 45rem;
+  max-width: 100%;
+  background-color: #fff;
+}
+.ability-item {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: auto 1fr;
+  font-family: "FiraGo light";
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.about__project {
+  text-align: right;
+}
+.about__grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 2.8rem;
+}
+.about__paragraph {
+  font-family: "FiraGo light";
+  position: relative;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: right;
+  padding: 3.5rem 2.7rem 3.5rem 6%;
+  line-height: 39px;
+}
+.about__paragraph::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  right: 0rem;
+  height: 0.1rem;
+  width: 117.5rem;
+  max-width: 100%;
+  background-color: #fff;
+}
+.about__paragraph::after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  right: 0rem;
+  width: 0.1rem;
+  height: 390px;
+  max-width: 100%;
+  background-color: #fff;
+}
+.ava--img {
+  display: inline-block;
+  margin-top: -12rem;
+}
+.about__project--img {
+  margin-left: -180px;
+}
+.margin-bottom-xl {
+  margin-bottom: 12.8rem;
+}
+.margin-bottom-sm {
+  margin-bottom: 3.2rem;
+}
+.creators__paragraph {
+  font-family: "FiraGo light";
+  position: relative;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 3.6rem 39% 3.6rem 2.4rem;
+}
+
+.creators__paragraph::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  height: 0.1rem;
+  width: 61.9rem;
+  max-width: 100%;
+  background-color: #fff;
+}
+
+.creators__paragraph::after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  width: 0.1rem;
+  height: 335px;
+  max-width: 100%;
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #1d1d1d;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 2.8rem;
+}
+
+.footer__title {
+  font-family: "BPG Nateli Mtavruli";
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+.footer__info {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer__anchor:link,
+.footer__anchor:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "BPG Nino Medium Caps";
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.footer-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.1rem;
+}
+
+.ava__img--div {
+  align-self: flex-start;
+  margin-top: -5rem;
+}
+
+.burger--btn {
+  display: none;
+}
+.anima__link {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.chatbot__container {
+  bottom: 20px;
+  right: 70px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 9999;
+}
+
+.chatbot__btn {
+  background: url("../images/icons-04.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 10vh;
+  width: 10vh;
+  max-height: 80px;
+  max-width: 80px;
+  min-height: 60px;
+  min-width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chatbot__btn::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.chatbot__open__btn {
+  /* background: url('../images/icons-04.png') no-repeat center; */
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+}
+
+.chatbot__close__btn {
+  /* background: url('../images/icons-04.png') no-repeat center; */
+  background-size: contain;
+  height: 18px;
+  width: 18px;
+}
+
+#chatbotIframe {
+  width: 370px;
+  height: 480px;
+}
+
+@media (max-width: 1240px) {
+  html {
+    font-size: 55.25%;
+  }
+  .main__content {
+    padding: 3.3rem 2.5rem;
+  }
+  .secondary__paragraph {
+    padding-left: 0;
+  }
+  .ability__list {
+    padding-right: 0;
+  }
+  .creators__paragraph {
+    padding: 3.6rem 2.4rem;
+  }
+  .about__paragraph {
+    padding: 3.5rem 2.7rem 3.5rem 0%;
+  }
+  .creators__paragraph::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    width: 0.1rem;
+    height: 20rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  .what-is-ava--text::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.1rem;
+    max-width: 100%;
+    height: 23rem;
+    background-color: #fff;
+  }
+  .ability__list::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    width: 0.1rem;
+    height: 24rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 1090px) {
+  .main__info--paragraph,
+  .secondary__paragraph,
+  .about__paragraph,
+  .creators__paragraph,
+  .ability-item {
+    font-size: 1.8rem;
+  }
+  .about__btn:link,
+  .about__btn:visited {
+    font-size: 1.6rem;
+  }
+  .about__project--img {
+    margin-left: 0;
+  }
+  .main__title {
+    font-size: 5.6rem;
+  }
+  .secondary__title {
+    font-size: 4.4rem;
+  }
+  .about__paragraph {
+    line-height: 25.38px;
+  }
+  .about__grid {
+    grid-template-columns: auto 1fr;
+  }
+  .ava--img {
+    margin-left: -2rem;
+    margin-top: -5rem;
+  }
+  .main__info--text::before {
+    content: "";
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 0.1rem;
+    width: 367px;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  .main__info--text::after {
+    content: "";
+    position: absolute;
+    left: 0rem;
+    top: 0;
+    width: 0.1rem;
+    max-width: 100%;
+    height: 38.5rem;
+    background-color: #fff;
+  }
+  .about__paragraph::before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+    height: 0.1rem;
+    width: 472px;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  .about__paragraph::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+    width: 0.1rem;
+    height: 25.5rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  .what-is-ava--text::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 503px;
+    max-width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
+  }
+
+  .what-is-ava--text::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.1rem;
+    max-width: 100%;
+    height: 14.5rem;
+    background-color: #fff;
+  }
+  .ability__list::before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    height: 0.1rem;
+    width: 448px;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  .ability__list::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    width: 0.1rem;
+    height: 19.5rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  .creators__paragraph::before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    height: 0.1rem;
+    width: 429px;
+    max-width: 100%;
+    background-color: #fff;
+  }
+
+  .creators__paragraph::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    width: 0.1rem;
+    height: 14rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__anchor:link,
+  .footer__anchor:visited {
+    font-size: 1.75rem;
+  }
+  .chatbot__container {
+    right: 25px;
+  }
+  .main__info--text::after {
+    content: "";
+    position: absolute;
+    left: 0rem;
+    top: 0;
+    width: 0.1rem;
+    max-width: 100%;
+    height: 49.5rem;
+    background-color: #fff;
+  }
+  .what-is-ava--text::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.1rem;
+    max-width: 100%;
+    height: 18.5rem;
+    background-color: #fff;
+  }
+
+  .about__paragraph::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+    width: 0.1rem;
+    height: 36.5rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  .creators__paragraph::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    width: 0.1rem;
+    height: 20rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+  .ava__img--div {
+    display: none;
+  }
+  .ava--img {
+    display: none;
+  }
+  main {
+    background-image: url("../images/ava-profile.webp"),
+      url("../images/ava-profile-2.webp");
+    background-repeat: no-repeat;
+    background-position: right -36rem top 0rem, left -26rem bottom 87rem;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    position: relative;
+  }
+  .burger--btn {
+    display: block;
+    border: none;
+    background: none;
+  }
+  .header {
+    padding: 2rem;
+  }
+  .main__navigation {
+    position: fixed;
+    display: none;
+    z-index: 99999;
+    top: 12rem;
+    right: 0%;
+    background: linear-gradient(
+      180deg,
+      #1d1d1d 1.04%,
+      rgba(29, 29, 29, 0.466512),
+      rgba(29, 29, 29, 0.06)
+    );
+    background-blend-mode: darken;
+    width: 50%;
+    height: 100dvh;
+  }
+  .navigation__links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  main {
+    background-image: url("../images/ava-profile.webp"),
+      url("../images/ava-profile-2.webp");
+    background-repeat: no-repeat;
+    background-position: right -36rem top 0rem, left -25rem bottom 88rem;
+  }
+
+  .main__info--paragraph,
+  .secondary__paragraph,
+  .about__paragraph,
+  .creators__paragraph,
+  .ability-item {
+    font-size: 1.6rem;
+  }
+  .about__btn:link,
+  .about__btn:visited {
+    font-size: 1.4rem;
+  }
+  .secondary__paragraph {
+    text-align: right;
+    line-height: 22.56px;
+  }
+  .what-is-ava--text {
+    padding-left: 0;
+  }
+  .creators__paragraph {
+    line-height: 22.56px;
+  }
+  .main__title {
+    font-size: 3.2rem;
+  }
+  .secondary__title {
+    font-size: 3rem;
+  }
+  .about__paragraph {
+    line-height: 25.38px;
+  }
+
+  .main__info--text::after {
+    content: "";
+    position: absolute;
+    left: 0rem;
+    top: 0;
+    width: 0.1rem;
+    max-width: 100%;
+    height: 43.5rem;
+    background-color: #fff;
+  }
+  .what-is-ava--text::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.1rem;
+    max-width: 100%;
+    height: 30.5rem;
+    background-color: #fff;
+  }
+  .ability__list::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    width: 0.1rem;
+    height: 25.5rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+
+  .about__paragraph::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+    width: 0.1rem;
+    height: 36.5rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  .creators__paragraph::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    width: 0.1rem;
+    height: 31rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+}
+@media (max-width: 410px) {
+  .creators__paragraph::after {
+    height: 472px;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    background-position: right -36rem top 0rem, left -25rem bottom 100rem;
+  }
+  .chatbot__container {
+    right: 10px;
+  }
+  .main__info--text::after {
+    content: "";
+    position: absolute;
+    left: 0rem;
+    top: 0;
+    width: 0.1rem;
+    max-width: 100%;
+    height: 49.5rem;
+    background-color: #fff;
+  }
+  .what-is-ava--text::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.1rem;
+    max-width: 100%;
+    height: 36.5rem;
+    background-color: #fff;
+  }
+  .ability__list::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    width: 0.1rem;
+    height: 25.5rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+
+  .about__paragraph::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+    width: 0.1rem;
+    height: 46rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  .creators__paragraph::after {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    width: 0.1rem;
+    height: 38.7rem;
+    max-width: 100%;
+    background-color: #fff;
+  }
 }
